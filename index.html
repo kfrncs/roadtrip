@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:700italic,400,600|Sanchez:400italic,400|Ubuntu:300,400,700' rel='stylesheet' type='text/css'>
+	<title>How Much is My Road Trip?</title>
+</head>
+<body>
+	<div id="calcPanel">
+		<h1>How much is my road trip?</h1>
+		<hr>
+		<form id="calculator">
+			<input placeholder="How far are you going? (miles)" id="distance" class="textbox" onkeypress="return isNumberKey(event)">
+			<input placeholder="How many MPG does your car get?" id="mileage" class="textbox" onkeypress="return isNumberKey(event)">
+			<input placeholder="What's the average cost of gas (/gal)?" id="gasCost" class="textbox" onkeypress="return isNumberKey(event)">
+		</form>
+		<img src="img/bg.jpg">
+		<a href="#"><span id="goButton" onclick="goButton()"><h3>Go</h3></span>
+		<a href="#"id="unitSwitch">Go metric</a></a>
+	</div>
+	<div id="answerPanel" style="display: none">
+		<h1 id="answer">.</h1>
+	</div>
+	<script src="script.js"></script>
+</body>
+
+</html>
